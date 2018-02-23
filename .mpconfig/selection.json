@@ -1,0 +1,34 @@
+[
+  {
+    "src": {
+      "CSS": {
+        "Arrow": false,
+        "AutoWidthWiderThanClient": false,
+        "Triangle": false
+      },
+      "D3": {
+        "Book_2nd": {
+          "7.1_Scales_domains_and_ranges": false,
+          "7.2_Scales_max_min": false,
+          "7.3_Scales_All_Together": false,
+          "9.1_Transitions_basis": false,
+          "experiment": false
+        },
+        "Custom": { "ScaleACube": false, "ZoomACube": false },
+        "Rudiment": {
+          "1_BarChart_I": true,
+          "1_BarChart_II": false,
+          "2.1_Three_Little_Circles_Bind_Data": false,
+          "2.2_Three_Little_Circles_Enter": false,
+          "2.3_Three_Little_Circles_Exit": false,
+          "2.4_Three_Little_Circles_All_Together": false,
+          "3_Thinking_with_joins": false
+        }
+      },
+      "Dom": { "Upload": false },
+      "Jss": { "Rudiment": false },
+      "Layout": { "AutoWidth": false },
+      "React": { "DomOfComponent": false }
+    }
+  }
+]

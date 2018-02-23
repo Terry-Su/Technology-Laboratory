@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=devicewidth, initialscale=1.0">
+    <meta httpequiv="XUACompatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jQuery.js"></script>
+    <script src="./download.js"></script>
+    <script src="./fetch.js"></script>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    const downloadUrl = '/origin.xlsx'
+    // download(downloadUrl, 'out.xlsx')
+    downloadFileByUrl(downloadUrl, 'out.xlsx')
+
+
+    function downloadFileByUrl(url, fileName) {
+        fetch(url).then(res => res.blob().then(blob => {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(blob);
+            a.href = url;
+            a.download = fileName;
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }))
+    }
+</script>
+
+</html>

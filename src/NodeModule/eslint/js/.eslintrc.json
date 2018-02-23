@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "plugins": ["prettier"],
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "object-curly-spacing": ["error", "always"],
+        "array-bracket-spacing": ["error", "always"],
+        "space-in-parens": ["error", "always"],
+        "block-spacing": ["error", "always"],
+        "computed-property-spacing": ["error", "always"],
+        "key-spacing": ["error", {
+            "afterColon": true,
+            "align": "colon"
+        }],
+        "keyword": {
+            "before": true,
+            "after": true
+        }
+    }
+}

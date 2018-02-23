@@ -1,0 +1,38 @@
+{
+  "name": "technology-laboratory",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node script.js",
+    "test": "node spec/jasmineEntry"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Terry-Su/Technology-Laboratory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Terry-Su/Technology-Laboratory/issues"
+  },
+  "homepage": "https://github.com/Terry-Su/Technology-Laboratory#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "browser-sync": "^2.23.6",
+    "chokidar": "^2.0.2",
+    "copy-webpack-plugin": "^4.4.1",
+    "css-loader": "^0.28.10",
+    "d3": "^4.13.0",
+    "eslint": "^4.18.1",
+    "jasmine": "^3.0.0",
+    "jss": "^9.8.0",
+    "jss-preset-default": "^4.3.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
