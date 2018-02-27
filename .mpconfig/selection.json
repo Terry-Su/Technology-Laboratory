@@ -16,7 +16,7 @@
         },
         "Custom": { "ScaleACube": false, "ZoomACube": false },
         "Rudiment": {
-          "1_BarChart_I": true,
+          "1_BarChart_I": false,
           "1_BarChart_II": false,
           "2.1_Three_Little_Circles_Bind_Data": false,
           "2.2_Three_Little_Circles_Enter": false,
@@ -28,6 +28,7 @@
       "Dom": { "Upload": false },
       "Jss": { "Rudiment": false },
       "Layout": { "AutoWidth": false },
+      "Library": { "Pixi": { "/all": true, "Experiment": false } },
       "React": { "DomOfComponent": false }
     }
   }

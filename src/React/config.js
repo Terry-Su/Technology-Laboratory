@@ -1,1 +1,1 @@
-module.exports = require( '../__shared__/config' )
+module.exports = require( '../config' )

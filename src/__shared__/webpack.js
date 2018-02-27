@@ -85,7 +85,7 @@ class SharedWebpackConfig {
           ]
         }
       ]
-	}
+    }
 
     this.moduleTypescript = {
       rules: [
@@ -105,79 +105,79 @@ class SharedWebpackConfig {
           test   : /\.ts.*?$/,
           use    : "ts-loader",
           exclude: /node_modules/
-        },
+        }
       ]
     }
 
-	this.moduleReactTypescript = {
-		rules: [
-		  {
-			test   : /\.js.*/,
-			exclude: /node_modules/,
-			use    : [
-			  {
-				loader : "babel-loader",
-				options: {
-				  presets: [ "es2015", "stage-2", "react" ]
-				}
-			  }
-			]
-		  },
-		  {
-			test   : /\.ts.*?$/,
-			use    : "ts-loader",
-			exclude: /node_modules/
-		  },
-		  {
-			test: /\.css?/,
-			use : [
-			  {
-				loader: "style-loader"
-			  },
-			  {
-				loader: "css-loader"
-			  }
-			]
-		  },
-		  {
-			test   : /\.scss?/,
-			exclude: /node_modules/,
-			use    : [
-			  {
-				loader: "style-loader"
-			  },
-			  {
-				loader: "css-loader"
-			  },
-			  {
-				loader: "sass-loader"
-			  }
-			]
-		  },
-		  {
-			test: /\.styl$/,
-			use : [
-			  {
-				loader: "style-loader"
-			  },
-			  {
-				loader: "css-loader"
-			  },
-			  {
-				loader: "stylus-loader"
-			  }
-			]
-		  },
-		  {
-			test: /\.(jpe?g|gif|png|svg|woff|woff2|ttf|wav|mp3)$/,
-			use : [
-			  {
-				loader: "file-loader"
-			  }
-			]
-		  }
-		]
-	  }
+    this.moduleReactTypescript = {
+      rules: [
+        {
+          test   : /\.ts.*?$/,
+          use    : "ts-loader",
+          exclude: /node_modules/
+        },
+        // {
+        //   test   : /\.js.*/,
+        //   exclude: /node_modules/,
+        //   use    : [
+        //     {
+        //       loader : "babel-loader",
+        //       options: {
+        //         presets: [ "es2015", "stage-2", "react" ]
+        //       }
+        //     }
+        //   ]
+        // },
+        {
+          test: /\.css?/,
+          use : [
+            {
+              loader: "style-loader"
+            },
+            {
+              loader: "css-loader"
+            }
+          ]
+        },
+        {
+          test   : /\.scss?/,
+          exclude: /node_modules/,
+          use    : [
+            {
+              loader: "style-loader"
+            },
+            {
+              loader: "css-loader"
+            },
+            {
+              loader: "sass-loader"
+            }
+          ]
+        },
+        {
+          test: /\.styl$/,
+          use : [
+            {
+              loader: "style-loader"
+            },
+            {
+              loader: "css-loader"
+            },
+            {
+              loader: "stylus-loader"
+            }
+          ]
+        },
+        {
+          test: /\.(jpe?g|gif|png|svg|woff|woff2|ttf|wav|mp3)$/,
+          use : [
+            {
+              loader: "file-loader"
+            }
+          ]
+        }
+      ]
+    }
 
     /**
      * Dev tools
@@ -243,12 +243,8 @@ class SharedWebpackConfig {
       devtool: this.devtoolSourceMap,
       resolve: {
         alias     : this.resolveAlias.alias,
-        extensions: [ ".js", ".json" ]
+        extensions: [ ".js", ".jsx", ".json" ]
       }
-      // externals: {
-      //   react      : "React",
-      //   "react-dom": "ReactDOM"
-      // }
     }
 
     /**
@@ -261,23 +257,19 @@ class SharedWebpackConfig {
         alias     : this.resolveAlias.alias,
         extensions: [ ".ts", ".tsx", ".js", ".json" ]
       }
-	}
+    }
 
-	/**
+    /**
      * React + typescript
      */
     this.reactTypescript = {
-		module : this.moduleReactTypescript,
-		devtool: this.devtoolSourceMap,
-		resolve: {
-		  alias     : this.resolveAlias.alias,
-		  extensions: [ ".ts", ".tsx", ".js", ".json" ]
-		}
-		// externals: {
-		//   react      : "React",
-		//   "react-dom": "ReactDOM"
-		// }
-	  }
+      module : this.moduleReactTypescript,
+      devtool: this.devtoolSourceMap,
+      resolve: {
+        alias     : this.resolveAlias.alias,
+        extensions: [ ".tsx", ".ts", ".js", ".json" ]
+      }
+    }
   }
 }
 

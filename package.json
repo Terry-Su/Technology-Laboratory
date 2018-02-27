@@ -32,7 +32,11 @@
     "jasmine": "^3.0.0",
     "jss": "^9.8.0",
     "jss-preset-default": "^4.3.0",
+    "pixi.js": "^4.7.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "ts-loader": "^4.0.0",
+    "tsconfig-paths-webpack-plugin": "^2.0.0",
+    "typescript": "^2.7.2"
   }
 }
