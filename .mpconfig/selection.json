@@ -28,7 +28,10 @@
       "Dom": { "Upload": false },
       "Jss": { "Rudiment": false },
       "Layout": { "AutoWidth": false },
-      "Library": { "Pixi": { "/all": true, "Experiment": false } },
+      "Library": {
+        "Cytoscape": { "/all": true, "Curve": false, "Experiment": false },
+        "Pixi": { "Experiment": false }
+      },
       "React": { "DomOfComponent": false }
     }
   }
