@@ -29,10 +29,12 @@
       "Jss": { "Rudiment": false },
       "Layout": { "AutoWidth": false },
       "Library": {
-        "Cytoscape": { "/all": true, "Curve": false, "Experiment": false },
-        "Pixi": { "Experiment": false }
+        "Cytoscape": { "Curve": false, "Experiment": false },
+        "Pixi": { "Experiment": false },
+        "Mobx": { "/all": true, "Experiment": false }
       },
-      "React": { "DomOfComponent": false }
+      "React": { "DomOfComponent": false },
+      "Sketch": { "Panel": true }
     }
   }
 ]
