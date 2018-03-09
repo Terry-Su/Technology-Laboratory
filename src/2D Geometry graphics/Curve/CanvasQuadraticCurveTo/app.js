@@ -24,8 +24,8 @@ const P3 = {
   y: 100
 }
 
-const points = randomPoints( 3 )
-// const points = [ P0, P1, P2, P3 ]
+// const points = randomPoints( 4 )
+const points = [ P0, P1, P2, P3 ]
 
 const path = algorithm( points )
 
@@ -40,8 +40,8 @@ ctx.strokeStyle = "black"
 ctx.stroke( path )
 
 function randomPoints( n ) {
-  const maxX = 1000
-  const maxY = 1000
+  const maxX = 500
+  const maxY = 500
 
   let points = []
 

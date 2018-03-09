@@ -37,13 +37,18 @@
       "React": { "DomOfComponent": false },
       "Sketch": { "Panel": true },
       "2D Geometry graphics": {
-        "/all": true,        
         "Curve": {
+        "/all": true,          
           "BezierCurve": false,
           "CubicBezierCurve": false,
           "QuadraticBezierCurve": false,
-          "QuadraticCurveTo": false
+          "CanvasQuadraticCurveTo": false,
+          "Handle": false
         }
+      },
+      "Canvas": {
+        "/all": true,
+        "Template": false
       }
     }
   }
