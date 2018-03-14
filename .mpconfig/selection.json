@@ -38,18 +38,15 @@
       "Sketch": { "Panel": true },
       "2D Geometry graphics": {
         "Curve": {
-        "/all": true,          
           "BezierCurve": false,
           "CubicBezierCurve": false,
           "QuadraticBezierCurve": false,
-          "CanvasQuadraticCurveTo": false,
-          "Handle": false
+          "Handle": false,
+          "QuadraticCurveToOfCanvas": false,
+          "BeizerCurveBound": true
         }
       },
-      "Canvas": {
-        "/all": true,
-        "Template": false
-      }
+      "Canvas": { "/all": true, "InteractionTemplate": false }
     }
   }
 ]
