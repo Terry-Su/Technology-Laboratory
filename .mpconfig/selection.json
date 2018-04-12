@@ -4,7 +4,8 @@
       "CSS": {
         "Arrow": false,
         "AutoWidthWiderThanClient": false,
-        "Triangle": false
+        "Triangle": false,
+        "Layout": { "/all": true, "experiment": false }
       },
       "D3": {
         "Book_2nd": {
@@ -35,7 +36,7 @@
         "Paper.js": { "Experiment": false }
       },
       "React": { "DomOfComponent": false },
-      "Sketch": { "Panel": true },
+      "Sketch": { "Panel": false },
       "2D Geometry graphics": {
         "Curve": {
           "BezierCurve": false,
@@ -43,10 +44,10 @@
           "QuadraticBezierCurve": false,
           "Handle": false,
           "QuadraticCurveToOfCanvas": false,
-          "BeizerCurveBound": true
+          "BeizerCurveBound": false
         }
       },
-      "Canvas": { "/all": true, "InteractionTemplate": false }
+      "Canvas": { "InteractionTemplate": false, "Improving performance": false }
     }
   }
 ]
