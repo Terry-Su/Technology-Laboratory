@@ -5,7 +5,7 @@
         "Arrow": false,
         "AutoWidthWiderThanClient": false,
         "Triangle": false,
-        "Layout": { "/all": true, "experiment": false }
+        "Layout": { "/all": false, "experiment": false, "AutoWidth": false }
       },
       "D3": {
         "Book_2nd": {
@@ -28,12 +28,12 @@
       },
       "Dom": { "Upload": false },
       "Jss": { "Rudiment": false },
-      "Layout": { "AutoWidth": false },
       "Library": {
         "Cytoscape": { "Curve": false, "Experiment": false },
         "Pixi": { "Experiment": false },
         "Mobx": { "Experiment": false },
-        "Paper.js": { "Experiment": false }
+        "Paper.js": { "Experiment": false },
+        "Swiper": { "Experiment": true, "WheelSwipe": true }
       },
       "React": { "DomOfComponent": false },
       "Sketch": { "Panel": false },
