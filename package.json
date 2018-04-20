@@ -40,6 +40,8 @@
     "pixi.js": "^4.7.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "swiper": "^4.2.2",
     "ts-loader": "^4.0.0",
     "tsconfig-paths-webpack-plugin": "^2.0.0",

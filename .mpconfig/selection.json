@@ -5,7 +5,7 @@
         "Arrow": false,
         "AutoWidthWiderThanClient": false,
         "Triangle": false,
-        "Layout": { "/all": false, "experiment": false, "AutoWidth": false }
+        "Layout": { "/all": true, "experiment": false, "AutoWidth": false }
       },
       "D3": {
         "Book_2nd": {
@@ -33,7 +33,7 @@
         "Pixi": { "Experiment": false },
         "Mobx": { "Experiment": false },
         "Paper.js": { "Experiment": false },
-        "Swiper": { "Experiment": true, "WheelSwipe": true }
+        "Swiper": { "Experiment": false, "WheelSwipe": false }
       },
       "React": { "DomOfComponent": false },
       "Sketch": { "Panel": false },

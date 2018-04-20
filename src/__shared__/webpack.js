@@ -136,7 +136,7 @@ class SharedWebpackConfig {
             },
             {
               loader: "css-loader"
-            }
+            },
           ]
         },
         {
@@ -243,7 +243,7 @@ class SharedWebpackConfig {
       devtool: this.devtoolSourceMap,
       resolve: {
         alias     : this.resolveAlias.alias,
-        extensions: [ ".js", ".jsx", ".json" ]
+        extensions: [ ".js", ".jsx", ".json", "/index.js", "/index.jsx", '.styl' ]
       }
     }
 
