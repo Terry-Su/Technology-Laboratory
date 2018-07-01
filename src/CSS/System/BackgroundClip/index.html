@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  div {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    background-size: 160px;
+    background-position: center;
+    background-image: url('./ff-logo.png');
+  }
+
+  .content-box {
+    background-clip: content-box
+  }
+
+  .padding-box {
+    background-clip: padding-box
+  }
+
+  .border-box {
+    background-clip: border-box
+  }
+</style>
+
+<body>
+  <div class="content-box"></div>
+  <div class="padding-box"></div>
+  <div class="border-box"></div>
+
+</body>
+
+</html>
