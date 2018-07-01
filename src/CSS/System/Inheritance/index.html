@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+body div div {
+   border-width: 1px;
+   border-style: solid;
+ }
+
+ .container { border-color: red; }
+
+ .el1 { border-color: inherit; }
+ .el2 { border-color: unset; }
+ .el3 { border-color: initial; }
+ .el4 { border-color: revert; }
+
+ .initial { display: initial; border-color: blue; }
+ .revert { display: revert; border-color: blue; }
+ 
+ 
+</style>
+<body>
+  <div class="container">
+      <div class="el1">text1</div>
+      <div class="el2">text2</div>
+      <div class="el3">text3</div>
+      <div class="el4">text4</div>
+
+      <br />
+      <div class="initial">initial</div>
+      <div class="revert">revert</div>
+  </div>
+
+
+  <!-- <div id="app" ></div> -->
+  
+</body>
+<!-- <script src="./app.js"></script> -->
+</html>

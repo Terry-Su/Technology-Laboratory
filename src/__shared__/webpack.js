@@ -9,15 +9,19 @@ class SharedWebpackConfig {
     /**
      * Modules
      */
-    this.moduleEs = {
-      test   : /\.js.*/,
-      exclude: /node_modules/,
-      use    : [
+    this.moduleES = {
+      rules: [
         {
-          loader : "babel-loader",
-          options: {
-            presets: [ "es2015", "stage-2" ]
-          }
+          test   : /\.js.*/,
+          exclude: /node_modules/,
+          use    : [
+            {
+              loader : "babel-loader",
+              options: {
+                presets: [ "es2015", "stage-2" ]
+              }
+            }
+          ]
         }
       ]
     }
@@ -136,7 +140,7 @@ class SharedWebpackConfig {
             },
             {
               loader: "css-loader"
-            },
+            }
           ]
         },
         {
@@ -236,6 +240,18 @@ class SharedWebpackConfig {
     }
 
     /**
+     * Ecmascript
+     */
+    this.ES = {
+      module : this.moduleES,
+      devtool: this.devtoolSourceMap,
+      resolve: {
+        alias     : this.resolveAlias.alias,
+        extensions: [ ".js", "/index.js" ]
+      }
+    }
+
+    /**
      * React
      */
     this.react = {
@@ -243,7 +259,7 @@ class SharedWebpackConfig {
       devtool: this.devtoolSourceMap,
       resolve: {
         alias     : this.resolveAlias.alias,
-        extensions: [ ".js", ".jsx", ".json", "/index.js", "/index.jsx", '.styl' ]
+        extensions: [ ".js", ".jsx", ".json", "/index.js", "/index.jsx", ".styl" ]
       }
     }
 

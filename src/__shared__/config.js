@@ -5,6 +5,20 @@ const { srcToBuild } = require( "./paths" )
 
 class Config {
   constructor() {
+    this.getNodeConfigES = dirname => {
+      return {
+        enableWebpack: true,
+        webpackConfig: Object.assign(
+          {
+            entry  : WS.entryApp( dirname ),
+            output : WS.outputBuild( dirname ),
+            plugins: [ WS.pluginCopyToBuild( dirname, [ "index.html" ] ) ]
+          },
+          WS.ES
+        )
+      }
+    }
+
     this.getNodeConfigGeneral = dirname => {
       return {
         enableWebpack: true,
