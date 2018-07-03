@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+  <style>
+    .root {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minMax(100px, 120px);
+      width: 500px;
+      height: 300px;
+      border: 1px solid blue;
+      
+    }
+
+    .root>p {
+    }
+
+    .left {
+      background: red;
+
+    }
+    .center {
+       background: blue;
+    }
+    .right {
+       background: orange;
+    }
+
+    .left {
+      /* height: 500px */
+    }
+    .center {
+
+    }
+    .right {
+
+    }
+  </style>
+<body>
+  <div class="root">
+    <p class="left">
+      text1<br/><br/>
+      text1<br/><br/>
+      text1<br/><br/>
+      text1<br/><br/>
+      text1<br/><br/>
+      text1<br/><br/>
+      text1<br/><br/>
+    </p>
+    <p class="center">text</p>
+    <p class="right">text</p>
+  </div>
+</body>
+
+</html>
