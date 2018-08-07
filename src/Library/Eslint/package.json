@@ -1,0 +1,17 @@
+{
+  "name": "eslint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "init": "eslint --init",
+    "eslint":"eslint testing/*",
+    "fix":"eslint --fix testing/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^5.3.0"
+  }
+}

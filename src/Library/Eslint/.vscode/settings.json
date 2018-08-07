@@ -1,0 +1,11 @@
+{
+  "prettier.eslintIntegration": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    // { "language": "javascript", "autoFix": true },
+    // "javascriptreact"
+    // { "language": "vue", "autoFix": true },
+    // { "language": "typescript", "autoFix": true },
+  ]
+}
