@@ -1,10 +1,11 @@
+import '../redux/test'
 // import '../redux/basic'
 // import '../redux/combineReducersExample'
 // import '../redux/composeExample'
 // import '../redux/applyMiddlewareExample'
 // import '../redux/bindActionCreatorsExample'
 
-import '../react-redux/basic'
+// import '../react-redux/basic'
 
 
 
