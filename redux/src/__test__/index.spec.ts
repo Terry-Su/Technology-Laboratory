@@ -1,15 +1,15 @@
-import { hello } from ".."
 // import '../redux/basic'
 // import '../redux/combineReducersExample'
-import '../redux/composeExample'
+// import '../redux/composeExample'
 // import '../redux/applyMiddlewareExample'
 // import '../redux/bindActionCreatorsExample'
 
-// describe( "Test", () => {
-//   it( "Unit", () => {
-//     // hello()
-//   } )
-// } )
+import '../react-redux/basic'
+
+
+
+
+
 describe( "long asynchronous specs", function() {
   var originalTimeout
   beforeEach( function() {
