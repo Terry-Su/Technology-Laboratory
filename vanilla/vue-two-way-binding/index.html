@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" /> 
+    <br/><br/>
+    Count: <span id="countContainer"></span>
+    <script>
+      const input = document.getElementById('input')
+      const countContainer = document.getElementById('countContainer')
+
+      // initialize data
+      const data = {
+        count: 0
+      }
+
+      // define render function
+      function render() {
+        input.value = data.count
+        countContainer.innerText = data.count
+      }
+
+      // initialize observation
+      let count = data.count
+      Object.defineProperty( data, 'count', {
+        enumerable: true,
+        configurable: true,
+        set(newCount) {
+          count = newCount
+          render()
+        },
+        get() {
+          return count
+        }
+      } )
+
+      // initlialze input
+      input.addEventListener('input', event => {
+        data.count = event.target.value
+      })
+
+      // intialize rendering
+      render()
+
+      
+
+
+    </script>
+  </body>
+</html>
