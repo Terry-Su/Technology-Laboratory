@@ -1,15 +1,15 @@
 {
-  "name": "vanilla",
+  "name": "http",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --files **/* --server --watch --directory --startPath /"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.3"
+    "express": "^4.16.4"
   }
 }

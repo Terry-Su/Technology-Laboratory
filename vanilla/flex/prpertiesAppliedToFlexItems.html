@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .container1 {
+    display: flex;
+    width: 500px;
+    height: 100px;
+    border: 1px solid blue;
+  }
+  .container1 div {
+    background: orange;
+    border: 1px solid grey;
+    flex-basis: 200px;
+  }
+
+  .container1 div:first-child {
+    flex-grow: 1;
+  }
+  .container1 div:nth-child(2) {
+    flex-grow: 1;
+  }
+  
+  </style>
+  
+<body>
+  
+    <div class="container1">
+      <div></div>
+      <div></div>
+    </div>
+</body>
+</html>
