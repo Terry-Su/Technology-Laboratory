@@ -24,12 +24,10 @@ const app = express()
 app.get( '/', (req, res) => {
   const appHtml = ReactDOMServer.renderToString( <App /> )
   const html = fs.readFileSync( path.resolve( __dirname, '../src/index.html' ), { encoding: 'utf8' })
-  res.send( html.replace( '<div id="root"></div>', appHtml ) )
+  res.send( html.replace( '<div id="root"></div>', `<div id="root">${ appHtml }</div>` ) )
 } )
 
 app.use( express.static( path.resolve( __dirname, 'build' ) ) )
-
-
 
 
 app.listen( 3610 )
