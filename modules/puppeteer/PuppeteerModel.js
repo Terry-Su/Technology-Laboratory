@@ -7,7 +7,7 @@ function PuppeteerModel() {
 }
 PuppeteerModel.prototype.init = async function( ) {
   this.browser = await puppeteer.launch( { 
-    // headless: false 
+    headless: false 
   } );
 }
 
