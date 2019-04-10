@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- 
+    # 
+    Validate the parallel loading of remote scripts and remote styles
+    on chrome devtools > network(waterfall)  
+  -->
+
+  
+
+  <title>Document</title>
+
+  <style>
+    h1{ font-size: 20px; }
+  </style>
+
+</head>
+<body>
+  <div class="markdown-body">
+    <h1>Test</h1>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script>
+  
+  let i = 0
+  while ( true ) {
+    i++
+    if (i > 1000000000) {
+      break
+    }
+  }
+  
+  </script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css">
+  <img src="https://terry-su.github.io/CDN/images/how-react-works/homeBackground.jpg" ></img>
+  </div>
+</body>
+</html>
