@@ -16,6 +16,8 @@ node_modules
 # next
 .next
 
+# nuxt
+.nuxt
 
 
 # Specific files
