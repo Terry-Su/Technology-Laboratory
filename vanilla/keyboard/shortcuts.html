@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="a">
+    <div id="b" tabindex="0">
+      <input />
+    </div>
+  </div>
+<script>
+const a = document.getElementById( 'a' )
+const b = document.getElementById( 'b' )
+
+b.focus()
+b.addEventListener( 'keydown', event => {
+  // console.log( event )
+
+  // composite keys
+  event.preventDefault()
+  console.log( event.ctrlKey, event.metaKey, event.key, event.keyCode )
+} )
+</script>
+<style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #a {
+      width: 100%;
+      height: 300px;
+      background: seashell;
+    }
+    
+    #b {
+      width: 100%;
+      height: 100px;
+      background:#ddd;
+    }
+    </style>
+</body>
+</html>
